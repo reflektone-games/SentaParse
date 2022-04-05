@@ -6,6 +6,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentaParse.Simai", "SentaPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentaParse.Mai2", "SentaParse.Mai2\SentaParse.Mai2.csproj", "{FA14B09F-B5A6-4DB6-B35E-5A34F45353EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentaParse.SentaLang", "SentaParse.SentaLang\SentaParse.SentaLang.csproj", "{A923A0CF-88DF-492F-9FD1-B6AC1EC9A57D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,5 +26,9 @@ Global
 		{FA14B09F-B5A6-4DB6-B35E-5A34F45353EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA14B09F-B5A6-4DB6-B35E-5A34F45353EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA14B09F-B5A6-4DB6-B35E-5A34F45353EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A923A0CF-88DF-492F-9FD1-B6AC1EC9A57D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A923A0CF-88DF-492F-9FD1-B6AC1EC9A57D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A923A0CF-88DF-492F-9FD1-B6AC1EC9A57D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A923A0CF-88DF-492F-9FD1-B6AC1EC9A57D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
