@@ -4,21 +4,17 @@
     "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Simai\\SentaParse.Simai.csproj": {}
   },
   "projects": {
-    "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Simai\\SentaParse.Simai.csproj": {
+    "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Core\\SentaParse.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Simai\\SentaParse.Simai.csproj",
-        "projectName": "SentaParse.Simai",
-        "projectPath": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Simai\\SentaParse.Simai.csproj",
+        "projectUniqueName": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Core\\SentaParse.Core.csproj",
+        "projectName": "SentaParse.Core",
+        "projectPath": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Core\\SentaParse.Core.csproj",
         "packagesPath": "C:\\Users\\RDCNY\\.nuget\\packages\\",
-        "outputPath": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Simai\\obj\\",
+        "outputPath": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Core\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\RDCNY\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,7 +54,65 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Simai\\SentaParse.Simai.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Simai\\SentaParse.Simai.csproj",
+        "projectName": "SentaParse.Simai",
+        "projectPath": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Simai\\SentaParse.Simai.csproj",
+        "packagesPath": "C:\\Users\\RDCNY\\.nuget\\packages\\",
+        "outputPath": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Simai\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\RDCNY\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
+            "projectReferences": {
+              "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Core\\SentaParse.Core.csproj": {
+                "projectPath": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Core\\SentaParse.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,10 @@
+D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Core\bin\Debug\netstandard2.1\SentaParse.Core.deps.json
+D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Core\bin\Debug\netstandard2.1\SentaParse.Core.dll
+D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Core\bin\Debug\netstandard2.1\SentaParse.Core.pdb
+D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Core\obj\Debug\netstandard2.1\SentaParse.Core.csproj.AssemblyReference.cache
+D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Core\obj\Debug\netstandard2.1\SentaParse.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Core\obj\Debug\netstandard2.1\SentaParse.Core.AssemblyInfoInputs.cache
+D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Core\obj\Debug\netstandard2.1\SentaParse.Core.AssemblyInfo.cs
+D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Core\obj\Debug\netstandard2.1\SentaParse.Core.csproj.CoreCompileInputs.cache
+D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Core\obj\Debug\netstandard2.1\SentaParse.Core.dll
+D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Core\obj\Debug\netstandard2.1\SentaParse.Core.pdb
