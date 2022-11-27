@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using SentaParse.Core.Chart;
 
 namespace SentaParse.Simai
 {
@@ -15,10 +16,13 @@ namespace SentaParse.Simai
 		/// <summary>
 		/// Interprets a 3simai file as serialized data.
 		/// </summary>
-		public static List<Token> Read(string simaiChart)
+		public static MaiChart Read(string simaiChart)
 		{
 			var scanner = new Scanner(simaiChart);
-			return scanner.ScanTokens();
+			var tokens =  scanner.ScanTokens();
+			
+			var parser = new Parser(tokens);
+			return parser.Parse();
 		}
 	}
 }

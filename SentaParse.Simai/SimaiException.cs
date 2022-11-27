@@ -5,8 +5,8 @@ namespace SentaParse.Simai
 	[Serializable]
 	internal class SimaiException : Exception
 	{
-		public SimaiException(int line, string location, string message)
-			: base($"[Line {line}] Error: {message}\n{location}")
+		public SimaiException(int line, int character, string location, string message)
+			: base($"Error: {message} at {location} ({line}, {character})")
 		{ }
 	}
 }

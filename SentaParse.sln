@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentaParse.Simai", "SentaPa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SentaParse.Mai2", "SentaParse.Mai2\SentaParse.Mai2.csproj", "{FA14B09F-B5A6-4DB6-B35E-5A34F45353EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nya", "Nya\Nya.csproj", "{0B706C4C-608F-44E8-BF3E-EF4F3BE1E238}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimaiReader", "SimaiReader\SimaiReader.csproj", "{0B706C4C-608F-44E8-BF3E-EF4F3BE1E238}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

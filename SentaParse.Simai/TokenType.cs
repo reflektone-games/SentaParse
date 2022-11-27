@@ -2,14 +2,21 @@ namespace SentaParse.Simai
 {
 	public enum TokenType
 	{
-		// Single-character tokens.
-		Comma,
+		/// <summary>
+		/// Progresses time
+		/// </summary>
+		StepTime,
 		
+		/// <summary>
+		/// Separates notes
+		/// </summary>
+		Separator,
+
 		// Modifiers
 		Hold,
 		Break,
-		Firework,
 		Ex,
+		Firework,
 
 		// Literals.
 		Tempo,

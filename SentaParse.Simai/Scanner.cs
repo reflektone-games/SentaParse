@@ -10,6 +10,7 @@ namespace SentaParse.Simai
 		private int _start;
 		private int _current;
 		private int _line = 1;
+		private int _char;
 
 		public Scanner(string source)
 		{
@@ -23,13 +24,16 @@ namespace SentaParse.Simai
 				_start = _current;
 				ScanToken();
 			}
-
-			_tokens.Add(new Token(TokenType.EndOfFile, ",", null, _line));
+			
+			if (_tokens[^1].Type != TokenType.EndOfFile)
+				_tokens.Add(new Token(TokenType.EndOfFile, ",", null, _line));
+			
 			return _tokens;
 		}
 
 		private void ScanToken()
 		{
+			_char++;
 			var c = Advance();
 			switch (c)
 			{
@@ -41,7 +45,7 @@ namespace SentaParse.Simai
 					break;
 
 				case ',':
-					AddToken(TokenType.Comma);
+					AddToken(TokenType.StepTime);
 					break;
 
 				case ' ':
@@ -52,6 +56,7 @@ namespace SentaParse.Simai
 
 				case '\n':
 					_line++;
+					_char = 0;
 					break;
 
 				case 'f':
@@ -69,6 +74,10 @@ namespace SentaParse.Simai
 				case 'h':
 					Hold();
 					break;
+				
+				case '/' or '\\':
+					AddToken(TokenType.Separator);
+					break;
 
 				case var _ when IsAlpha(c):
 					TouchPanel();
@@ -76,9 +85,13 @@ namespace SentaParse.Simai
 				case var _ when IsDigit(c):
 					Button();
 					break;
+				
+				case 'E':
+					AddToken(TokenType.EndOfFile);
+					break;
 
 				default:
-					ErrorHandler.Report(_line, c.ToString(), "Unexpected character.");
+					ErrorHandler.Report(_line, _char, c.ToString(), "Unexpected character.");
 					break;
 			}
 		}
@@ -95,7 +108,7 @@ namespace SentaParse.Simai
 			{
 				if (IsAtEnd)
 				{
-					ErrorHandler.Report(_line, _source[(_start + 1)..(_current - 1)], "Unterminated hold duration.");
+					ErrorHandler.Report(_line, _char, _source[(_start + 1)..(_current - 1)], "Unterminated hold duration.");
 					return;
 				}
 
@@ -112,7 +125,7 @@ namespace SentaParse.Simai
 			{
 				if (text[0] != '#')
 				{
-					ErrorHandler.Report(_line, text, "Unexpected hold duration syntax. (Did you intend to add a '#'?)");
+					ErrorHandler.Report(_line, _char, text, "Unexpected hold duration syntax. (Did you intend to add a '#'?)");
 					return;
 				}
 
@@ -121,7 +134,7 @@ namespace SentaParse.Simai
 				if (float.TryParse(text, out var value))
 					AddToken(TokenType.Hold, new { UseSecondTiming = true, Value = value });
 				else
-					ErrorHandler.Report(_line, text, "Invalid hold duration syntax. (Expected a number)");
+					ErrorHandler.Report(_line, _char, text, "Invalid hold duration syntax. (Expected a number)");
 
 				return;
 			}
@@ -132,7 +145,7 @@ namespace SentaParse.Simai
 			{
 				if (IsAtEnd)
 				{
-					ErrorHandler.Report(_line, _source[(_start + 1)..(_current - 1)], "Unterminated hold duration.");
+					ErrorHandler.Report(_line, _char, _source[(_start + 1)..(_current - 1)], "Unterminated hold duration.");
 					return;
 				}
 
@@ -155,7 +168,7 @@ namespace SentaParse.Simai
 			}
 			else
 			{
-				ErrorHandler.Report(_line, _source[(_start + 1)..(_current - 1)], "Invalid hold duration syntax. (Expected [number:number])");
+				ErrorHandler.Report(_line, _char, _source[(_start + 1)..(_current - 1)], "Invalid hold duration syntax. (Expected [number:number])");
 			}
 		}
 
@@ -163,7 +176,7 @@ namespace SentaParse.Simai
 		{
 			if (PeekPrevious() is not (>= 'a' and <= 'e' or >= 'A' and <= 'E'))
 			{
-				ErrorHandler.Report(_line, PeekPrevious().ToString(),
+				ErrorHandler.Report(_line, _char, PeekPrevious().ToString(),
 					"Invalid touch panel group. (Expected a ~ e or A ~ E)");
 				return;
 			}
@@ -180,7 +193,7 @@ namespace SentaParse.Simai
 
 			if (number is > 8 or < 1)
 			{
-				ErrorHandler.Report(_line, number.ToString(), "Invalid button number. (Expected 1 ~ 8)");
+				ErrorHandler.Report(_line, _char, number.ToString(), "Invalid button number. (Expected 1 ~ 8)");
 				return;
 			}
 
@@ -193,7 +206,7 @@ namespace SentaParse.Simai
 			{
 				if (IsAtEnd)
 				{
-					ErrorHandler.Report(_line, _source[(_start + 1)..(_current - 1)], "Unterminated tempo.");
+					ErrorHandler.Report(_line, _char, _source[(_start + 1)..(_current - 1)], "Unterminated tempo.");
 					return;
 				}
 
@@ -214,7 +227,7 @@ namespace SentaParse.Simai
 			{
 				if (IsAtEnd)
 				{
-					ErrorHandler.Report(_line, _source[(_start + 1)..(_current - 1)],
+					ErrorHandler.Report(_line, _char, _source[(_start + 1)..(_current - 1)],
 						"Unterminated time signature.");
 					return;
 				}
@@ -249,6 +262,6 @@ namespace SentaParse.Simai
 		private static bool IsDigit(char c) => c is >= '0' and <= '9';
 		private static bool IsAlpha(char c) => c is >= 'a' and <= 'z' or >= 'A' and <= 'Z';
 
-		private bool IsAtEnd => _current >= _source.Length;
+		private bool IsAtEnd => _current >= _source.Length || _tokens.Count > 0 && _tokens[^1].Type == TokenType.EndOfFile;
 	}
 }
