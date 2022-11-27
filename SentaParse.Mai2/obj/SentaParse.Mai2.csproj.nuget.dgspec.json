@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Mai2\\SentaParse.Mai2.csproj": {}
+    "C:\\Users\\Yanodo\\Documents\\SentaParse\\SentaParse.Mai2\\SentaParse.Mai2.csproj": {}
   },
   "projects": {
-    "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Mai2\\SentaParse.Mai2.csproj": {
+    "C:\\Users\\Yanodo\\Documents\\SentaParse\\SentaParse.Mai2\\SentaParse.Mai2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Mai2\\SentaParse.Mai2.csproj",
+        "projectUniqueName": "C:\\Users\\Yanodo\\Documents\\SentaParse\\SentaParse.Mai2\\SentaParse.Mai2.csproj",
         "projectName": "SentaParse.Mai2",
-        "projectPath": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Mai2\\SentaParse.Mai2.csproj",
-        "packagesPath": "C:\\Users\\fumiko\\.nuget\\packages\\",
-        "outputPath": "D:\\360 Backup\\Library Projects\\AstroDX\\SentaParse\\SentaParse.Mai2\\obj\\",
+        "projectPath": "C:\\Users\\Yanodo\\Documents\\SentaParse\\SentaParse.Mai2\\SentaParse.Mai2.csproj",
+        "packagesPath": "C:\\Users\\Yanodo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yanodo\\Documents\\SentaParse\\SentaParse.Mai2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\fumiko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yanodo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

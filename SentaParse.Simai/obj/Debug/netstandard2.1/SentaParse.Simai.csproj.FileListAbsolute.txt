@@ -11,3 +11,16 @@ D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Simai\obj\Debug\net
 D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Simai\obj\Debug\netstandard2.1\SentaParse.Simai.csproj.CopyComplete
 D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Simai\obj\Debug\netstandard2.1\SentaParse.Simai.dll
 D:\360 Backup\Library Projects\AstroDX\SentaParse\SentaParse.Simai\obj\Debug\netstandard2.1\SentaParse.Simai.pdb
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\bin\Debug\netstandard2.1\SentaParse.Simai.deps.json
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\bin\Debug\netstandard2.1\SentaParse.Simai.dll
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\bin\Debug\netstandard2.1\SentaParse.Simai.pdb
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\bin\Debug\netstandard2.1\SentaParse.Core.dll
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\bin\Debug\netstandard2.1\SentaParse.Core.pdb
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\obj\Debug\netstandard2.1\SentaParse.Simai.csproj.AssemblyReference.cache
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\obj\Debug\netstandard2.1\SentaParse.Simai.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\obj\Debug\netstandard2.1\SentaParse.Simai.AssemblyInfoInputs.cache
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\obj\Debug\netstandard2.1\SentaParse.Simai.AssemblyInfo.cs
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\obj\Debug\netstandard2.1\SentaParse.Simai.csproj.CoreCompileInputs.cache
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\obj\Debug\netstandard2.1\SentaParse.Simai.csproj.CopyComplete
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\obj\Debug\netstandard2.1\SentaParse.Simai.dll
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Simai\obj\Debug\netstandard2.1\SentaParse.Simai.pdb

@@ -1,0 +1,24 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "SentaParse.Mai2/1.0.0": {
+        "runtime": {
+          "SentaParse.Mai2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SentaParse.Mai2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

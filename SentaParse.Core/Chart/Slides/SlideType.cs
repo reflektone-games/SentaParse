@@ -46,6 +46,7 @@
         EdgeCurveClockwise,
         EdgeCurveCounterClockwise,
 
-        Wifi
+        Wifi,
+        AutoRing
     }
 }

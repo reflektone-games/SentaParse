@@ -1,0 +1,10 @@
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Mai2\bin\Debug\netstandard2.1\SentaParse.Mai2.deps.json
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Mai2\bin\Debug\netstandard2.1\SentaParse.Mai2.dll
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Mai2\bin\Debug\netstandard2.1\SentaParse.Mai2.pdb
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Mai2\obj\Debug\netstandard2.1\SentaParse.Mai2.csproj.AssemblyReference.cache
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Mai2\obj\Debug\netstandard2.1\SentaParse.Mai2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Mai2\obj\Debug\netstandard2.1\SentaParse.Mai2.AssemblyInfoInputs.cache
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Mai2\obj\Debug\netstandard2.1\SentaParse.Mai2.AssemblyInfo.cs
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Mai2\obj\Debug\netstandard2.1\SentaParse.Mai2.csproj.CoreCompileInputs.cache
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Mai2\obj\Debug\netstandard2.1\SentaParse.Mai2.dll
+C:\Users\Yanodo\Documents\SentaParse\SentaParse.Mai2\obj\Debug\netstandard2.1\SentaParse.Mai2.pdb
